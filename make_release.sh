@@ -1,6 +1,6 @@
 #!/bin/sh
 
-ver=1.7
+ver=1.8
 cs_dir=jolla-translations-cs_CZ
 sk_dir=jolla-translations-sk_SK
 TRANSIFEX_TRANSLATIONS=./translations
@@ -17,8 +17,8 @@ mkdir -p $sk_dir
 for i in $(ls -1 $TRANSIFEX_TRANSLATIONS); do
   fn=$(basename $i)
   tsname=`echo $fn  | sed 's/jolla-cesky.\(.*\)ts/\1/'`
-  cp -v $TRANSIFEX_TRANSLATIONS/$fn/cs_CZ.ts $cs_dir/${tsname}_cs_CZ.ts
-  cp -v $TRANSIFEX_TRANSLATIONS/$fn/sk.ts $sk_dir/${tsname}_sk_SK.ts
+  cp -v $TRANSIFEX_TRANSLATIONS/$fn/cs_CZ.ts $cs_dir/${tsname}-cs_CZ.ts
+  cp -v $TRANSIFEX_TRANSLATIONS/$fn/sk.ts $sk_dir/${tsname}-sk_SK.ts
 done
 
 cp -R ./$cs_dir ./$cs_rdir

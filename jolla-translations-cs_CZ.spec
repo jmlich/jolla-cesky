@@ -1,5 +1,5 @@
 Name:           jolla-translations-cs_CZ
-Version:        1.7
+Version:        1.8
 Release:        1
 Summary:        Czech translations of OS for Jolla
 Group:          System/Base
@@ -36,7 +36,7 @@ make DESTDIR=$RPM_BUILD_ROOT install
 
 
 %changelog
-* Thu Jun 17 2015 Jozef Mlich <jmlich@redhat.com> - 1.7-1
+* Thu Jun 17 2015 Jozef Mlich <jmlich@redhat.com> - 1.8-1
 - update 13
 
 * Wed Feb 04 2015 Jozef Mlich <jmlich@redhat.com> - 1.5-1

@@ -1,6 +1,8 @@
+.tx
 *.tar.gz
-jolla-translations-cs_CZ
-jolla-translations-sk_SK
+jolla-translations-cs_CZ/*ts
+jolla-translations-sk_SK/*ts
 jolla-translations-cs_CZ-*
 jolla-translations-sk_SK-*
 translations/*
+*.rpm
