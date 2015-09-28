@@ -46,7 +46,7 @@ for i in $(ls -1 $EN_TS_DIR); do
   if [ ! -d "TX_DIR" ]; then
     mkdir -p $TX_DIR
   fi
-  mv $ts_name $tx_en_ts
+  cp $ts_name $tx_en_ts
 done
 
 
