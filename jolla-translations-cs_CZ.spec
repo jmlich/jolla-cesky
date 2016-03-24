@@ -28,6 +28,9 @@ make %{?_smp_mflags}
 rm -rf $RPM_BUILD_ROOT
 make DESTDIR=$RPM_BUILD_ROOT install
 
+%post
+localedef -i cs_CZ -f UTF-8 cs_CZ.utf8
+
 %files
 %doc
 %{_datadir}/translations/*.qm
